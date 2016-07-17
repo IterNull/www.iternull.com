@@ -13,7 +13,7 @@ function getRandomInt(min, max) {
 function randomChoice(items) {
 	return items[getRandomInt(0, items.length-1)];
 }
-
+/*
 var xkcd = {
 	latest: null,
 	last: null,
@@ -118,7 +118,7 @@ TerminalShell.commands['xkcd-goto'] = function(terminal, subcmd) {
 	});
 	xkcdDisplay(terminal, 292);
 };
-
+*/
 TerminalShell.commands['sudo'] = function(terminal) {
 	var cmd_args = Array.prototype.slice.call(arguments);
 	cmd_args.shift(); // terminal
@@ -526,12 +526,14 @@ TerminalShell.commands['halp'] = function(terminal) {
 	terminal.print('  exit         - Exit terminal');
 	terminal.print('  restart      - Restart terminal');
 	terminal.print('  curl         - Transfer a URL');
+	/*
 	terminal.print('  xkcd-first   - XKCD Comic First page');
 	terminal.print('  xkcd-next    - XKCD Comic Next Page');
 	terminal.print('  xkcd-prev    - XKCD Comic Previous');
 	terminal.print('  xkcd-last    - XKCD Comic last page');
 	terminal.print('  xkcd-random  - XKCD Comic random page');
 	terminal.print('  xkcd-goto    - XKCD Comic Go to a page');
+	*/
 	terminal.print('......');
 }; 
 
