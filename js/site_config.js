@@ -18,7 +18,7 @@ var xkcd = {
 	latest: null,
 	last: null,
 	cache: {},
-	base: 'http://dynamic.xkcd.com/api-0/jsonp/comic/',
+	base: 'https://dynamic.xkcd.com/api-0/jsonp/comic/',
 	
 	get: function(num, success, error) {
 		if (num == null) {
@@ -45,7 +45,8 @@ var xkcd = {
 		}
 	}
 };
-
+*/
+/*
 var xkcdDisplay = TerminalShell.commands['xkcd-display'] = function(terminal, path) {
 	function fail() {
 		terminal.print($('<p>').addClass('error').text('display: unable to open image "'+path+'": No such file or directory.'));
@@ -618,17 +619,20 @@ $(document).ready(function() {
 		Terminal.promptActive = true;
 	}
 	$('#screen').bind('cli-load', function(e) {
+		Terminal.runCommand('cat welcome.txt');
+/*
 		xkcd.get(null, function(data) {
 			if (data) {
 				xkcd.latest = data;
 				$('#screen').one('cli-ready', function(e) {
-//					Terminal.runCommand('cat welcome.txt');
+					// Terminal.runCommand('cat welcome.txt');
 				});
 				Terminal.runCommand('cat welcome.txt');
 			} else {
 				noData();
 			}
 		}, noData);
+*/
 	});
 	
 	$(document).konami(function(){
