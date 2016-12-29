@@ -223,15 +223,15 @@ Filesystem = {
 		});
 	}}
 };
-Filesystem['about'] = linkFile('about');
+Filesystem['about'] = linkFile('about/');
+Filesystem['app'] = linkFile('p/');
 Filesystem['blog'] = linkFile('http://blog.iternull.com/');
 Filesystem['docs'] = linkFile('http://docs.iternull.com/');
-Filesystem['dvwa'] = linkFile('http://dvwa.iternull.com/');
 Filesystem['reader'] = linkFile('http://reader.iternull.com');
 Filesystem['forums'] = linkFile('http://forums.iternull.com/');
-Filesystem['store'] = linkFile('http://store.iternull.com/');
-Filesystem['github'] = linkFile('https://github.com/ZMOM1031');
-Filesystem['old-site'] = linkFile('old');
+// Filesystem['store'] = linkFile('http://store.iternull.com/');
+Filesystem['github'] = linkFile('https://github.com/iternull-team');
+// Filesystem['old-site'] = linkFile('old/');
 TerminalShell.pwd = Filesystem;
 
 TerminalShell.commands['cd'] = function(terminal, path) {
