@@ -191,11 +191,17 @@ function linkFile(url) {
 Filesystem = {
 	'welcome.txt': {type:'file', read:function(terminal) {
 		terminal.print($('<h4>').text('Welcome to The IterNull Console.'));
-		terminal.print(" ___ _            _   _       _ _ ");
+/* 		terminal.print(" ___ _            _   _       _ _ ");
 		terminal.print("|_ _| |_ ___ _ __| \\ | |_   _| | |");
 		terminal.print(" | || __/ _ \\ '__|  \\| | | | | | |");
 		terminal.print(" | || ||  __/ |  | |\\  | |_| | | |");
-		terminal.print("|___|\\__\\___|_|  |_| \\_|\\__,_|_|_|");
+		terminal.print("|___|\\__\\___|_|  |_| \\_|\\__,_|_|_|"); */
+		terminal.print("██╗████████╗███████╗██████╗ ███╗   ██╗██╗   ██╗██╗     ██╗     ");
+		terminal.print("██║╚══██╔══╝██╔════╝██╔══██╗████╗  ██║██║   ██║██║     ██║     ");
+		terminal.print("██║   ██║   █████╗  ██████╔╝██╔██╗ ██║██║   ██║██║     ██║     ");
+		terminal.print("██║   ██║   ██╔══╝  ██╔══██╗██║╚██╗██║██║   ██║██║     ██║     ");
+		terminal.print("██║   ██║   ███████╗██║  ██║██║ ╚████║╚██████╔╝███████╗███████╗");
+		terminal.print("╚═╝   ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝╚══════╝");
 		terminal.print("");
         terminal.print('Use "help" to view the help information.');
 		terminal.print('Use "ls", "cat", and "cd" to navigate the filesystem.');
