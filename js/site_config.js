@@ -206,7 +206,7 @@ Filesystem = {
 		terminal.print("");
         terminal.print('Use "help" to view the help information.');
 		terminal.print('Use "ls", "cat", and "cd" to navigate the filesystem.');
-	}},
+	}}/* ,
 	'license.txt': {type:'file', read:function(terminal) {
 		terminal.print($('<p>').html('Client-side logic for Wordpress CLI theme :: <a href="http://thrind.xamai.ca/">R. McFarland, 2006, 2007, 2008</a>'));
 		terminal.print($('<p>').html('jQuery rewrite and overhaul :: <a href="http://www.chromakode.com/">Chromakode, 2010</a>'));
@@ -228,17 +228,15 @@ Filesystem = {
 		], function(num, line) {
 			terminal.print(line);
 		});
-	}}
+	}} */
 };
 Filesystem['about'] = linkFile('about/');
-Filesystem['app'] = linkFile('p/');
-Filesystem['blog'] = linkFile('http://blog.iternull.com/');
-Filesystem['docs'] = linkFile('http://docs.iternull.com/');
-Filesystem['reader'] = linkFile('http://reader.iternull.com');
-Filesystem['forums'] = linkFile('http://forums.iternull.com/');
+Filesystem['blog'] = linkFile('https://blog.iternull.com/');
+Filesystem['docs'] = linkFile('https://docs.iternull.com/');
+// Filesystem['reader'] = linkFile('http://reader.iternull.com');
+// Filesystem['forums'] = linkFile('http://forums.iternull.com/');
 // Filesystem['store'] = linkFile('http://store.iternull.com/');
-Filesystem['github'] = linkFile('https://github.com/iternull-team');
-// Filesystem['old-site'] = linkFile('old/');
+Filesystem['github'] = linkFile('https://github.com/iternull');
 TerminalShell.pwd = Filesystem;
 
 TerminalShell.commands['cd'] = function(terminal, path) {
