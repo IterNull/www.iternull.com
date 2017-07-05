@@ -190,12 +190,6 @@ function linkFile(url) {
 
 Filesystem = {
 	'welcome.txt': {type:'file', read:function(terminal) {
-		terminal.print($('<h4>').text('Welcome to The IterNull Console.'));
-/* 		terminal.print(" ___ _            _   _       _ _ ");
-		terminal.print("|_ _| |_ ___ _ __| \\ | |_   _| | |");
-		terminal.print(" | || __/ _ \\ '__|  \\| | | | | | |");
-		terminal.print(" | || ||  __/ |  | |\\  | |_| | | |");
-		terminal.print("|___|\\__\\___|_|  |_| \\_|\\__,_|_|_|"); */
 		terminal.print("");
 		terminal.print("██╗████████╗███████╗██████╗ ███╗   ██╗██╗   ██╗██╗     ██╗     ");
 		terminal.print("██║╚══██╔══╝██╔════╝██╔══██╗████╗  ██║██║   ██║██║     ██║     ");
@@ -204,8 +198,13 @@ Filesystem = {
 		terminal.print("██║   ██║   ███████╗██║  ██║██║ ╚████║╚██████╔╝███████╗███████╗");
 		terminal.print("╚═╝   ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝╚══════╝");
 		terminal.print("");
+		terminal.print($('<h4>').text('Welcome to The IterNull Console.'));
+		terminal.print("");
         terminal.print('Use "help" to view the help information.');
 		terminal.print('Use "ls", "cat", and "cd" to navigate the filesystem.');
+		terminal.print("");
+		terminal.print($('<p>').html('Links: <a target="_blank" href="https://blog.iternull.com/">Blog</a> <a target="_blank" href="https://docs.iternull.com/">Docs</a> <a target="_blank" href="https://shop.iternull.com/">Shop</a> <a target="_blank" href="https://github.com/iternull">GitHub</a> '));
+		terminal.print("");
 	}}/* ,
 	'license.txt': {type:'file', read:function(terminal) {
 		terminal.print($('<p>').html('Client-side logic for Wordpress CLI theme :: <a href="http://thrind.xamai.ca/">R. McFarland, 2006, 2007, 2008</a>'));
@@ -233,9 +232,9 @@ Filesystem = {
 Filesystem['about'] = linkFile('about/');
 Filesystem['blog'] = linkFile('https://blog.iternull.com/');
 Filesystem['docs'] = linkFile('https://docs.iternull.com/');
-// Filesystem['reader'] = linkFile('http://reader.iternull.com');
+Filesystem['shop'] = linkFile('http://shop.iternull.com/');
+Filesystem['store'] = linkFile('http://store.iternull.com/');
 // Filesystem['forums'] = linkFile('http://forums.iternull.com/');
-// Filesystem['store'] = linkFile('http://store.iternull.com/');
 Filesystem['github'] = linkFile('https://github.com/iternull');
 TerminalShell.pwd = Filesystem;
 
