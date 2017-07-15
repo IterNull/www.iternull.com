@@ -203,7 +203,7 @@ Filesystem = {
         terminal.print('Use "help" to view the help information.');
 		terminal.print('Use "ls", "cat", and "cd" to navigate the filesystem.');
 		terminal.print("");
-		terminal.print($('<p>').html('Links: <a target="_blank" href="https://blog.iternull.com/">Blog</a> <a target="_blank" href="https://docs.iternull.com/">Docs</a> <a target="_blank" href="https://shop.iternull.com/">Shop</a> <a target="_blank" href="https://github.com/iternull">GitHub</a> '));
+		terminal.print($('<p>').html('Links: <a target="_blank" href="https://blog.iternull.com/">Blog</a> <a target="_blank" href="https://docs.iternull.com/">Docs</a> <a target="_blank" href="https://shop.iternull.com/">Shop</a> <a target="_blank" href="https://www.iternull.com/projects/">Projects</a> <a target="_blank" href="https://github.com/iternull">GitHub</a> '));
 		terminal.print("");
 	}}/* ,
 	'license.txt': {type:'file', read:function(terminal) {
