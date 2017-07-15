@@ -1,8 +1,0 @@
-site_name: Projects
-#theme: cyborg
-theme_dir: cyborg
-copyright: "Cinder is licensed under the <a href='https://github.com/chrissimpkins/cinder/blob/master/LICENSE.md'>MIT license"
-
-pages:
-  - Home: index.md
-  - LAN Tap: lan-tap.md
