@@ -203,7 +203,7 @@ Filesystem = {
         terminal.print('Use "help" to view the help information.');
 		terminal.print('Use "ls", "cat", and "cd" to navigate the filesystem.');
 		terminal.print("");
-		terminal.print($('<p>').html('Links: <a target="_blank" href="https://www.iternull.com/about/">About</a> <a target="_blank" href="https://blog.iternull.com/">Blog</a> <a target="_blank" href="https://www.iternull.com/projects/">Projects</a> <a target="_blank" href="https://github.com/iternull">GitHub</a> '));
+		terminal.print($('<p>').html('Links: <a target="_blank" href="https://www.iternull.com/about/">About</a> <a target="_blank" href="https://blog.iternull.com/">Blog</a> <a target="_blank" href="https://www.iternull.com/projects/">Projects</a>'));
 		terminal.print("");
 	}}/* ,
 	'license.txt': {type:'file', read:function(terminal) {
@@ -236,7 +236,6 @@ Filesystem['blog'] = linkFile('https://blog.iternull.com/');
 // Filesystem['store'] = linkFile('https://store.iternull.com/');
 // Filesystem['forums'] = linkFile('https://forums.iternull.com/');
 Filesystem['projects'] = linkFile('https://www.iternull.com/projects/');
-Filesystem['github'] = linkFile('https://github.com/iternull');
 TerminalShell.pwd = Filesystem;
 
 TerminalShell.commands['cd'] = function(terminal, path) {
